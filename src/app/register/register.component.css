@@ -1,0 +1,16 @@
+/* Añadir estilos específicos para el componente de registro */
+.register-container {
+    margin-top: 20px; /* Espaciado superior para el contenedor de registro */
+  }
+  
+  .register-form {
+    margin-top: 20px; /* Espaciado superior para el formulario de registro */
+  }
+  
+  .mb-3 {
+    margin-bottom: 20px; /* Espaciado inferior para los elementos del formulario */
+  }
+  
+  .text-danger {
+    margin-top: 5px; /* Espaciado superior para los mensajes de error */
+  }

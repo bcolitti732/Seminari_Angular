@@ -1,9 +1,15 @@
-@if(loggedin)
-{
-    <app-usuario></app-usuario>
-}
-@else  {
-    <app-login (exportLoggedIn)="getLoggedIn($event)"></app-login>
-}
+<div class="container">
+  <div *ngIf="!loggedin; else mainContent" class="form-container">
+    <div class="form-item">
+      <app-login (exportLoggedIn)="getLoggedIn($event)"></app-login>
+    </div>
+    <div class="form-item">
+      <app-register></app-register>
+    </div>
+  </div>
 
-<router-outlet />
+  <ng-template #mainContent>
+    <h1>Bienvenido a la aplicación</h1>
+    <button class="btn btn-danger" (click)="logout()">Cerrar sesión</button>
+  </ng-template>
+</div>
